@@ -15,6 +15,7 @@ class Game:
         self.difficulty = difficulty
 
     def choiceSelection(self):
+        print(self.script.choice_moment)
         invalid_choice = True
         while invalid_choice:
             choice = input("What do you choose? Choice A or B?\n")
@@ -45,27 +46,20 @@ class Game:
                     self.character.health -= random.randint(30, 50)
                     print("You have received damage, your current health is {}\n".format(self.character.health))
                 else:
-                    self.character.health -= random.randint(10, 30)
+                    self.character.health -= random.randint(20, 40)
                     print("You have received damage, your current health is {}\n".format(self.character.health))
             else:
                 if self.difficulty > 5:
-                    self.character.health -= random.randint(10, 30)
+                    self.character.health -= random.randint(15, 20)
                     print("You have received damage, your current health is {}\n".format(self.character.health))
                 else:
-                    self.character.health -= random.randint(5, 15)
+                    self.character.health -= random.randint(10, 16)
                     print("You have received damage, your current health is {}\n".format(self.character.health))
                 pass
+        elif self.script.story_type == 'chapter_end':
+            pass
         else:
             raise ValueError("No such story type.\n")
-        return None
-
-
-    def checkGameEnd(self):
-        if self.character.health <= 0:
-            self.end = True
-            print("Oh no, your health has reached 0. You have died!\n")
-        else:
-            pass
         return None
 
     def showHealth(self):

@@ -1,6 +1,7 @@
 from classes.story_generator import Story
 from classes.character import Character
 from classes.game import Game
+from scripts import script_loading as Script
 
 def main():
     character_name = input("What is the name of your character?\n")
@@ -13,21 +14,43 @@ def main():
             break
         except ValueError:
             print("That was not a valid character type. Please try again.\n")
-    story = Story("Test Story.", "normal")
-    story.insert_story_text(story, "choice a", True)
-    story.insert_story_text(story, "choice b", False)
+    story = Script.scenario_1
     new_game = Game(new_character, story)
+    print("It is early 1942. You are a junior officer at the rank of Lieutenant in the Imperial Japanese Army who was "
+          "prompted to sign on with the army shortly after graduation from Waseda University due to your strong desire "
+          "in defending the Japanese Empire from external threats.\nFurthermore, given the Japanese army’s consistent "
+          "victories in the battles that it has taken part in so far, you felt that being able to be part of the "
+          "undefeated army and to contribute to more of their victories would be a good career. Or so, you thought.\n")
+    if new_character.role_type == 'lucky':
+        print("Furthermore, you have always been sure of your luck as well. Since youth, you have always been saved "
+              "from unfortunate incidents due to sheer luck despite having partaken in them, and you regularly win "
+              "small amounts of money from gambling with your friends as well.\nBeing confident of your luck, you "
+              "are sure that you will be able to survive and get out of dangerous situations with luck on your side.\n")
+    else:
+        print("Furthermore, you have always been sure of your physical fitness and ability as well. Since youth, you "
+              "have always been first in local athletic events, and have even represented your university in "
+              "Volleyball and Baseball.\nYou are sure that even if you are placed in a pinch, your athletic ability "
+              "and toughness will allow you to survive and adapt to most situations.\n")
+    print("Your character has initial health of {}".format(new_game.character.getHealth()))
+    print("\n")
     while not new_game.end:
         new_game.showStory()
         new_game.interactiveStory()
-        new_game.checkGameEnd()
-        if new_game.script.choice_a is None and new_game.script.choice_b is None:
-            print("Game ended.\n")
+        if new_game.character.health <= 0:
+            print("Oh no, your health has reached 0. You have died!\n")
             break
         else:
-            new_game.choiceSelection()
+            pass
+        if new_game.script.story_type == 'chapter_end':
             new_game.showHealth()
-
+            new_game.script = new_game.script.choice_a
+        else:
+            if new_game.script.choice_a is None and new_game.script.choice_b is None:
+                print("Game has ended.\n")
+                break
+            else:
+                new_game.choiceSelection()
+                new_game.showHealth()
     return None
 
 if __name__ == '__main__':

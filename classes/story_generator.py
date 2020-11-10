@@ -25,32 +25,33 @@ class Story:
         __init__ : Initializes the story based on the list of strings (lines) given
         """
 
-    def __init__(self, story: str, type, choice_a=None, choice_b=None):
+    def __init__(self, story: str, moment,  type, choice_a=None, choice_b=None):
         self.story_node = story
+        self.choice_moment = moment
         self.story_type = type
         self.choice_a = choice_a
         self.choice_b = choice_b
 
-    def insert_story_text(self, story, inserted_story: str, choice_a_bool: bool, type="normal"):
+    def insert_story_text(self, inserted_story: str, inserted_story_moment : str, choice_a_bool: bool, type="normal"):
         if choice_a_bool:
-            if story.choice_a is None:
-                story.choice_a = Story(inserted_story, type)
+            if self.choice_a is None:
+                self.choice_a = Story(inserted_story, inserted_story_moment, type)
             else:
                 raise (ValueError("Choice A already exists for this story.\n"))
         else:
-            if story.choice_b is None:
-                story.choice_b = Story(inserted_story, type)
+            if self.choice_b is None:
+                self.choice_b = Story(inserted_story, inserted_story_moment, type)
             else:
                 raise (ValueError("Choice B already exists for this story.\n"))
 
-    def insert_story_node(self, story, inserted_story_node, choice_a_bool: bool):
+    def insert_story_node(self, inserted_story_node, choice_a_bool: bool):
         if choice_a_bool:
-            if story.choice_a is None:
-                story.choice_a = inserted_story_node
+            if self.choice_a is None:
+                self.choice_a = inserted_story_node
             else:
                 raise (ValueError("Choice A already exists for this story.\n"))
         else:
-            if story.choice_b is None:
-                story.choice_b = inserted_story_node
+            if self.choice_b is None:
+                self.choice_b = inserted_story_node
             else:
                 raise (ValueError("Choice B already exists for this story.\n"))
