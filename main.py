@@ -47,10 +47,13 @@ def main():
         else:
             if new_game.script.choice_a is None and new_game.script.choice_b is None:
                 print("Game has ended.\n")
-                break
+                new_game.end = True
             else:
                 new_game.choiceSelection()
                 new_game.showHealth()
+    end = input("Thanks for playing!")
+    if end is not None:
+        return None
     return None
 
 if __name__ == '__main__':
