@@ -43,17 +43,17 @@ class Game:
             luck_barrier = random.randint(3, 9)
             if self.character.luck < luck_barrier:
                 if self.difficulty > 5:
-                    self.character.health -= random.randint(30, 50)
+                    self.character.health -= random.randint(25, 35)
                     print("You have received damage, your current health is {}\n".format(self.character.health))
                 else:
-                    self.character.health -= random.randint(20, 40)
+                    self.character.health -= random.randint(15, 25)
                     print("You have received damage, your current health is {}\n".format(self.character.health))
             else:
                 if self.difficulty > 5:
                     self.character.health -= random.randint(15, 20)
                     print("You have received damage, your current health is {}\n".format(self.character.health))
                 else:
-                    self.character.health -= random.randint(10, 16)
+                    self.character.health -= random.randint(10, 15)
                     print("You have received damage, your current health is {}\n".format(self.character.health))
                 pass
         elif self.script.story_type == 'chapter_end':
