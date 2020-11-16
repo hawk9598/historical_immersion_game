@@ -281,7 +281,7 @@ scenario_3ab = Story(story="You decide that, as commander of your platoon, you h
                             "squad lying in wait in the jungle, but they have been disposed of by your surviving "
                             "platoon soldiers. You make a mental note to yourself of the importance of staying "
                             "vigilant even in the jungle, and proceed further in.\n",
-                     type="luck_damage")
+                     type="chapter_end")
 scenario_3b = Story(story="You notice the low morale of your platoon and the increasing desperation that the army "
                           "has displayed in the previous meeting. Taking these as hints that engaging in a defensive "
                           "battle will not do much good, you decide to announce a retreat into the woods in an attempt "
@@ -336,7 +336,340 @@ scenario_3bbb = Story(story="You decide that, as commander of your platoon, you 
                              "squad lying in wait in the jungle, but they have been disposed of by your surviving "
                              "platoon soldiers. You make a mental note to yourself of the importance of staying "
                              "vigilant even in the jungle, and proceed further in.\n",
+                      type="chapter_end")
+scenario_4 = Story(story="It has been close to a week since you lead your platoon into the forest, and despite the "
+                         "decreasing encounters with the Allied troops , you and your soldiers face the difficult "
+                         "tasks of sourcing food, treating the wounded, and staying alive in the hot and humid "
+                         "forest of Guadalcanal.\n\nIt is late evening and it is close to getting dark, and "
+                         "you peer into the contents of your own diary, which you have been writing in every "
+                         "night to keep your own sanity in check. The diary reads: \n'To Mother and Father, it has "
+                         "been close to a week since I have been stuck in a jungle evading enemy forces and close "
+                         "to 4 months since I have left Japan. I have lost slightly over half of my platoon and am "
+                         "myself nursing some minor-moderate injuries whilst being constantly on the run.\n\nI "
+                         "remember the day I signed up for this war as an officer: It was a cold and breezy "
+                         "day just months after my graduation from Waseda; and I was back then a clear-eyed, "
+                         "idealistic man who was passionate for Japan’s liberation of the other Asian "
+                         "countries under Western colonialism. “Would it not do good for these countries "
+                         "to be free of Western rule, and have Japan share the fruits of her modernization "
+                         "with these countries?” I had so innocently thought. It is with this thought where "
+                         "I passionately signed up for a war that purportedly claimed to liberate the other "
+                         "Asian people and to ultimately glorify the Emperor via Japan’s victories.\n\nHowever, "
+                         "even in officer school, I saw many atrocities occur in the name of the Emperor "
+                         "that made me wonder more and more about Japan’s goal for the war. I still recall the "
+                         "trembling arms of a cadet who was just forced to behead a Chinese POW as a rite of "
+                         "passage, with the rest of the senior officers at the side applauding him for his ‘work’ "
+                         "whilst the cadet himself seemed to have lost part of his humanity then…'\n",
+                   moment="As you are about to continue reading your diary, you are interrupted by Private Yamaguchi, "
+                          "who promptly urges you to take a sleep first in preparation for night guard duty where "
+                          "everyone rotates to keep watch of Allied soldiers. As you drift into sleep, you struggle "
+                          "to recall the remaining contents of that specific diary entry which you wrote a few days "
+                          "ago. Was it something along the lines of : A) 'It is these atrocities alone that have "
+                          "slowly changed my goal of participating the war. Instead of glory, all I look out for is "
+                          "to survive and tell the tale of this god-forsaken war to the later generations, even if "
+                          "the memory of these atrocities will forever haunt me' or B) 'However, despite these "
+                          "atrocities, I still wholeheartedly believe in the need to at least glorify the "
+                          "Emperor’s name and to staunchly defend Japan against the barbarians. After all, "
+                          "if not for the Emperor or Japan, how would we then justify these atrocities?'\n",
+                   type="normal")
+scenario_4a = Story(story="You are nudged awake by one of your platoon soldiers as a signal for you to begin your "
+                          "shift of guard duty. It is still late in the night, and despite having slept for close "
+                          "to 3 hours, you still feel largely lethargic and tired from a lack of rest.\n\nAs your "
+                          "surroundings seem to be safe and quiet for now, you ruffle through your bag and try "
+                          "to find your journal to continue your diary taking. However, as hard as you try, you "
+                          "can’t seem to find your diary among the remains of your rations and firearms. Just as "
+                          "you are about to turn around to check whether your soldiers might have mistakenly taken "
+                          "your diary, you feel the nudge of a rifle barrel against your back and immediately stop "
+                          "whatever you are doing and slowly raise your arms.\n\n'Sir, might you have been looking "
+                          "for this” says Sergeant Tanaka as he holds up your diary journal against your face "
+                          "whilst menacingly prodding his rifle against your back.'\n\n'Shit. Sergeant Tanaka "
+                          "is one of the more fanatical soldiers in the army, and him discovering that journal "
+                          "does not bode well for me…”, you think as you slowly turn around to face the sergeant.'\n\n"
+                          "In the army, despite the seniority of junior officers over the senior enlisted men, "
+                          "this was mostly in name only and the sergeant still commands most of the respect from "
+                          "the platoon given the vast difference in the number of years of army experience that "
+                          "junior officers have as compared to the senior enlisted men.\n",
+                    moment="'Sir, it seems like you do not have much favorable opinions of Japan and his royal "
+                           "highness the Emperor, which can only mean that you are one of those liberal traitors "
+                           "against Japan.', says Sergeant Tanaka who looks prepared to execute you on the spot for "
+                           "this grave mistake.\n\nWhat do you do? Do you: A) Plead your case against "
+                           "Sergeant Tanaka and urge him to realize the pointlessness of the war and that "
+                           "survival is instead key or B) Scold Tanaka for his false allegations and berate "
+                           "him for his mistaken ideas?\n",
+                    type="normal")
+scenario_4aa = Story(story="You plead your case against Sergeant Tanaka, but unfortunately the man does not seem to "
+                           "listen to your explanations. Just as he is about to shoot you, however, the sudden sounds "
+                           "of English conversations from the incoming Allied soldiers shocks him temporarily and "
+                           "you use this as an opportunity to wrestle Tanaka to the ground.\n",
+                     moment="Do you: A) Disarm Tanaka and leave him promptly to wake the rest of your platoon "
+                            "soldiers up to warn them against the incoming enemies or B) Pick up the rifle and "
+                            "quickly execute Tanaka for insubordination (which you can use to explain your actions "
+                            "later on to your platoon soldiers) but risk discovery by the Allied soldiers which will "
+                            "put you and your platoon in considerable danger?\n",
+                     type="normal")
+scenario_4aaa = Story(story="You proceed to quickly disarm Tanaka and leave him lying on the floor as you rush to warn "
+                            "your comrades of the incoming Allied soldiers. However, just as you are about to warn the "
+                            "first soldier you can find, you find yourself shot in the back by Tanaka, who had a hidden"
+                            " handgun in his uniform all the while! You are left to bleed out in the midst of the "
+                            "Allied soldier’s attack on your platoon soldiers, who have now discovered your platoon’s "
+                            "presence due to Tanaka’s firing of the handgun. You die witnessing your helpless soldiers "
+                            "get massacred by the Allied soldiers.\n",
+                   moment=None,
+                   type="normal")
+scenario_4aab = Story(story="You decide to get rid of Tanaka despite the considerable risk because you can not see "
+                            "how else to not get backstabbed by Tanaka in the midst of a possible Allied attack. "
+                            "You pick up his rifle, shoot him in the head, and yell at your soldiers to wake up and "
+                            "retreat before unleashing smoke grenades all over the place to mask your platoon’s "
+                            "escape from the incoming Allied soldiers.\n",
+                      moment="Despite the attack from the Allied soldiers, you and most of your platoon soldiers "
+                             "make it out of the situation with minor injuries and proceed deeper into the forest "
+                             "for further cover. Your platoon asks you for the whereabouts of Sergeant Tanaka, "
+                             "which you simply cover up by saying that the Allied soldiers got to him first "
+                             "before he managed to escape alongside the rest of you.\n\nNevertheless, the "
+                             "situation over the next 2 weeks grow more and more dire for you and the rest of "
+                             "your platoon, as more sneak attacks from the Allied troops leave fewer and fewer of "
+                             "your platoon mates surviving. With only 5 of your soldiers and you left, you are left "
+                             "to make a drastic decision. Do you: A) Surrender to the next group of Allied soldiers "
+                             "you encounter or B) Press on regardless and hope for Japanese reinforcements to come?\n",
                       type="luck_damage")
+scenario_4aaba = Story(story="Seeing the desperate situation that you are in, you decide (with reluctant agreement "
+                             "from the rest of the survivors) to surrender to the next group of Allied soldiers "
+                             "you see.\n\nThat night, you proceed to pen down your thoughts into the diary you "
+                             "recovered from Tanaka after the confrontation between the two of you that day:\n\n'To "
+                             "Mother and Father, it is getting closer to the day where my remaining"
+                             " soldiers and I will surrender to the Allies. I can’t help but feel that "
+                             "despite the highly desperate situation that my soldiers and I are in, death is "
+                             "still a much better respite as compared to shamefully surrendering to the Allied "
+                             "soldiers.\n\nAlthough there have been rumors that the Allied soldiers do not treat "
+                             "POWs well, I believe that the case is different for the Australian soldiers and for "
+                             "this battle, because the war has slowly become a war of attrition between us and the "
+                             "Australians and having a Japanese officer with them will be helpful for them to end "
+                             "this futile war quickly.\n\nNevertheless, I pray hope that you will be able to "
+                             "understand your unfilial son’s decision in surrendering as opposed to dying on the "
+                             "battlefield. I sincerely wish to see Japan once more, and despite the shamefulness of "
+                             "surrendering, I truly believe that the tale of this war can serve as a warning and "
+                             "lesson to learn for the generations to come. Japan might lose or surrender in the "
+                             "future, but this does not mean that the Empire of Japan will be lost forever; we can "
+                             "always come back in the future stronger than ever, without having to engage in such "
+                             "meaningless, futile wars and sacrificing the lives of so many loyal Japanese.\n\nI hope "
+                             "you all will be able to understand my sentiments. I pray hope to see you all soon and "
+                             "to be able to once again drink miso soup and chat about anything and everything with "
+                             "sake.'\n\nThe very next day, you wake up to notice that 2 out of 5 of your platoon’s "
+                             "survivors have decided to commit ritual suicide instead of surrendering to the enemy, "
+                             "and you grimly bury their bodies with the 3 remaining survivors. Although you have your "
+                             "doubts (and fear that all this might lead to death regardless), you and your surviving "
+                             "soldiers find an Allied platoon and immediately wave a crude white flag indicating your "
+                             "surrender. You use your bare knowledge of English to indicate your surrender, shouting "
+                             "at the top of your lungs all the while ensuring that you and your soldiers have both "
+                             "arms in the air to indicate non-hostility. The Allied soldiers take note of your "
+                             "surrender, and approach you slowly before arresting you and your soldiers as POWs.\n",
+                       moment=None,
+                       type="chapter_end")
+scenario_4aabb = Story(story="Seeing the desperate situation that you are in, you decide to follow the wishes of your "
+                             "surviving soldiers and most of them decided to press on in the forest and wait for "
+                             "Japanese reinforcements.\n\n…\n\nMonths have passed and you and another one of "
+                             "your soldiers are all that remains of the platoon. No reinforcements have came so "
+                             "far, and the number of Allied soldiers left on Guadalcanal have dwindled down.\n",
+                       moment="Facing the possibility of malnutrition after having spent months without proper food "
+                              "in the jungle, you get closer to death every day, and are finally forced to make a "
+                              "decision: A) Surrender to the remaining natives on the island and hope that you will "
+                              "not be killed on first sight given that most Japanese are already presumed to be dead "
+                              "currently, B) Die an honorable death by blowing yourself up the next time you "
+                              "encounter enemies?\n",
+                       type="normal")
+scenario_4aabba = Story(story="Becoming desperate from the lack of water and food, you decide to immediately seek "
+                              "out the help of the natives and surrender. After hours of searching, you find a "
+                              "settlement of natives and proceed to wave your white flag in to surrender.\n\n"
+                              "Unfortunately, you realize that the particular settlement you are surrendering to "
+                              "lost a lot of natives due to the previous Japanese occupation on the island before "
+                              "the arrival of the Allied forces, and they react hostilely and decide to execute you "
+                              "instead. You die, wondering if it might have been a better choice to surrender earlier "
+                              "to the Allied forces instead.\n",
+                        moment=None,
+                        type="normal")
+scenario_4aabbb = Story(story="You decide against surrendering to the natives, knowing that most of them are still "
+                              "hostile towards the Japanese due to the effects of the short Japanese occupation of "
+                              "Guadalcanal. Being all prepared now, you write a death poem:\n\n'Wide-eyed and eager,\n"
+                              "I charged to the forefront,\nAll ready to die,\nFor family and country,\n"
+                              "To bring peace and safety home.'\n\nWith your death poem complete, you mentally prepare "
+                              "yourself and your other soldier to blow yourselves up with grenades during the next "
+                              "time you encounter an Allied soldier platoon.\n",
+                        moment=None,
+                        type="normal")
+scenario_4ab = Story(story="You decide to accuse Sergeant Tanaka of false allegations and claim that the diary "
+                           "journal does not belong to you. Unfortunately, your flimsy defense and scolding does "
+                           "not persuade the fanatical soldier and he instead prepares to kill you for being a "
+                           "traitor towards Japan and the Emperor. Just as he is about to shoot you, however, the "
+                           "sudden sounds of English conversations from the incoming Allied soldiers shocks him "
+                           "temporarily and you use this as an opportunity to wrestle Tanaka to the ground.",
+                     moment="Do you: A) Disarm Tanaka and leave him promptly to wake the rest of your platoon "
+                            "soldiers up to warn them against the incoming enemies or B) Pick up the rifle and "
+                            "quickly execute Tanaka for insubordination (which you can use to explain your actions "
+                            "later on to your platoon soldiers) but risk discovery by the Allied soldiers which will "
+                            "put you and your platoon in considerable danger?\n",
+                     type="normal")
+scenario_4aba = Story(story="You proceed to quickly disarm Tanaka and leave him lying on the floor as you rush to warn "
+                            "your comrades of the incoming Allied soldiers. However, just as you are about to warn the "
+                            "first soldier you can find, you find yourself shot in the back by Tanaka, who had a "
+                            "hidden handgun in his uniform all the while! You are left to bleed out in the midst of the"
+                            " Allied soldier’s attack on your platoon soldiers, who have now discovered your platoon’s "
+                            "presence due to Tanaka’s firing of the handgun. You die witnessing your helpless soldiers "
+                            "get massacred by the Allied soldiers.\n",
+                   moment=None,
+                   type="normal")
+scenario_4abb = Story(story="You decide to get rid of Tanaka despite the considerable risk because you can not see "
+                            "how else to not get backstabbed by Tanaka in the midst of a possible Allied attack. "
+                            "You pick up his rifle, shoot him in the head, and yell at your soldiers to wake up and "
+                            "retreat before unleashing smoke grenades all over the place to mask your platoon’s "
+                            "escape from the incoming Allied soldiers.\n",
+                      moment="Despite the attack from the Allied soldiers, you and most of your platoon soldiers "
+                             "make it out of the situation with minor injuries and proceed deeper into the forest "
+                             "for further cover. Your platoon asks you for the whereabouts of Sergeant Tanaka, "
+                             "which you simply cover up by saying that the Allied soldiers got to him first "
+                             "before he managed to escape alongside the rest of you.\n\nNevertheless, the "
+                             "situation over the next 2 weeks grow more and more dire for you and the rest of "
+                             "your platoon, as more sneak attacks from the Allied troops leave fewer and fewer of "
+                             "your platoon mates surviving. With only 5 of your soldiers and you left, you are left "
+                             "to make a drastic decision. Do you: A) Surrender to the next group of Allied soldiers "
+                             "you encounter or B) Press on regardless and hope for Japanese reinforcements to come?\n",
+                      type="luck_damage")
+scenario_4abba = Story(story="Seeing the desperate situation that you are in, you decide (with reluctant agreement "
+                             "from the rest of the survivors) to surrender to the next group of Allied soldiers "
+                             "you see.\n\n That night, you proceed to pen down your thoughts into the diary you "
+                             "recovered from Tanaka after the confrontation between the two of you that day:\n\n'To "
+                             "Mother and Father, it is getting closer to the day where my remaining"
+                             " soldiers and I will surrender to the Allies. I can’t help but feel that "
+                             "despite the highly desperate situation that my soldiers and I are in, death is "
+                             "still a much better respite as compared to shamefully surrendering to the Allied "
+                             "soldiers.\n\nAlthough there have been rumors that the Allied soldiers do not treat "
+                             "POWs well, I believe that the case is different for the Australian soldiers and for "
+                             "this battle, because the war has slowly become a war of attrition between us and the "
+                             "Australians and having a Japanese officer with them will be helpful for them to end "
+                             "this futile war quickly.\n\nNevertheless, I pray hope that you will be able to "
+                             "understand your unfilial son’s decision in surrendering as opposed to dying on the "
+                             "battlefield. I sincerely wish to see Japan once more, and despite the shamefulness of "
+                             "surrendering, I truly believe that the tale of this war can serve as a warning and "
+                             "lesson to learn for the generations to come. Japan might lose or surrender in the "
+                             "future, but this does not mean that the Empire of Japan will be lost forever; we can "
+                             "always come back in the future stronger than ever, without having to engage in such "
+                             "meaningless, futile wars and sacrificing the lives of so many loyal Japanese.\n\nI hope "
+                             "you all will be able to understand my sentiments. I pray hope to see you all soon and "
+                             "to be able to once again drink miso soup and chat about anything and everything with "
+                             "sake.'\n\nThe very next day, you wake up to notice that 2 out of 5 of your platoon’s "
+                             "survivors have decided to commit ritual suicide instead of surrendering to the enemy, "
+                             "and you grimly bury their bodies with the 3 remaining survivors. Although you have your "
+                             "doubts (and fear that all this might lead to death regardless), you and your surviving "
+                             "soldiers find an Allied platoon and immediately wave a crude white flag indicating your "
+                             "surrender. You use your bare knowledge of English to indicate your surrender, shouting "
+                             "at the top of your lungs all the while ensuring that you and your soldiers have both "
+                             "arms in the air to indicate non-hostility. The Allied soldiers take note of your "
+                             "surrender, and approach you slowly before arresting you and your soldiers as POWs.\n",
+                       moment=None,
+                       type="chapter_end")
+scenario_4abbb = Story(story="Seeing the desperate situation that you are in, you decide to follow the wishes of your "
+                             "surviving soldiers and most of them decided to press on in the forest and wait for "
+                             "Japanese reinforcements.\n\n…\n\nMonths have passed and you and another one of "
+                             "your soldiers are all that remains of the platoon. No reinforcements have came so "
+                             "far, and the number of Allied soldiers left on Guadalcanal have dwindled down.\n",
+                       moment="Facing the possibility of malnutrition after having spent months without proper food "
+                              "in the jungle, you get closer to death every day, and are finally forced to make a "
+                              "decision: A) Surrender to the remaining natives on the island and hope that you will "
+                              "not be killed on first sight given that most Japanese are already presumed to be dead "
+                              "currently, B) Die an honorable death by blowing yourself up the next time you "
+                              "encounter enemies?\n",
+                       type="normal")
+scenario_4abbba = Story(story="Becoming desperate from the lack of water and food, you decide to immediately seek "
+                              "out the help of the natives and surrender. After hours of searching, you find a "
+                              "settlement of natives and proceed to wave your white flag to surrender.\n\n"
+                              "Unfortunately, you realize that the particular settlement you are surrendering to "
+                              "lost a lot of natives due to the previous Japanese occupation on the island before "
+                              "the arrival of the Allied forces, and they react hostilely and decide to execute you "
+                              "instead. You die, wondering if it might have been a better choice to surrender earlier "
+                              "to the Allied forces instead.\n",
+                        moment=None,
+                        type="normal")
+scenario_4abbbb = Story(story="You decide against surrendering to the natives, knowing that most of them are still "
+                              "hostile towards the Japanese due to the effects of the short Japanese occupation of "
+                              "Guadalcanal. Being all prepared now, you write a death poem:\n\n'Wide-eyed and eager,\n"
+                              "I charged to the forefront,\nAll ready to die,\nFor family and country,\n"
+                              "To bring peace and safety home.'\n\nWith your death poem complete, you mentally prepare "
+                              "yourself and your other soldier to blow yourselves up with grenades during the next "
+                              "time you encounter an Allied soldier platoon.\n",
+                        moment=None,
+                        type="normal")
+scenario_4b = Story(story="You are nudged awake by one of your platoon soldiers as a signal for you to begin your "
+                          "shift of guard duty. It is still late in the night, and despite having slept for close "
+                          "to 3 hours, you still feel largely lethargic and tired from a lack of rest.\n\nYou turn "
+                          "around and notice Sergeant Tanaka staring at you, and you proceed to ask him about what "
+                          "his thoughts are about the current situation. However, instead of responding to your "
+                          "question, he holds up your diary journal and applauds you for your thoughts, affirming "
+                          "that he too believes that loyalty to the Emperor is most important in the war despite "
+                          "the atrocities or lives lost.\n\nAlthough you are in shock over how he managed "
+                          "to obtain your diary, he continues saying that he initially suspected that you were "
+                          "simply yet another one of those liberal university graduates who would not care less "
+                          "about the fate of the Emperor and Japan, and even muses that he considered killing you "
+                          "if he were to find you being as such.\n\nHearing these words of his, you are in "
+                          "complete surprise and reprimand him over his act of stealing your diary journal, before "
+                          "going on to agree with him that ultimately, the Emperor and kokutai matters the most.\n\n"
+                          "However, in the midst of the conversation, you overhear the footsteps of Allied soldiers "
+                          "approaching and immediately proceed to rouse your soldiers so as to battle against "
+                          "the enemy.\n",
+                    moment="Despite the odds, you manage to survive the skirmish but proceed to realize that "
+                           "you are only left with 4 other men in your charge, with the rest having perished "
+                           "due to the skirmish or due to the earlier battles you all had in the forest.\n\nYou have "
+                           "to now make a choice; do you decide to: A) Press on, while waiting for Japanese "
+                           "reinforcements or B) Proceed in a suicidal charge towards the next group of Allied"
+                           " soldiers you see?\n",
+                    type="luck_damage")
+scenario_4ba = Story(story="Seeing the desperate situation that you are in, you decide to follow the wishes of your "
+                           "surviving soldiers and most of them decided to press on in the forest and wait for Japanese"
+                           " reinforcements.\n\n…\n\nMonths have passed and you and another one of your "
+                           "soldiers are all that remains of the platoon. No reinforcements have came so far, "
+                           "and the number of Allied soldiers left on Guadalcanal have dwindled down.\n",
+                     moment="Facing the possibility of malnutrition after having spent months without proper food in "
+                            "the jungle, you get closer to death every day, and are finally forced to make a decision: "
+                            "A) Die an honorable death by blowing yourself up the next time you encounter enemies or "
+                            "B) Commit ritual suicide?\n",
+                     type="normal")
+scenario_4baa = Story(story="You decide against committing suicide, being eager to bring about the deaths of as many "
+                            "other Allied soldiers as you can with your death. Being all prepared now, you write a "
+                            "death poem:\n\n'Wide-eyed and eager,\nI charged to the forefront,\nAll ready to die,\n"
+                            "For Emperor and country,\nFor glory and victory.'\n\nWith your death poem complete, you "
+                            "mentally prepare yourself and your other soldier to blow yourselves up with grenades "
+                            "during the next time you encounter an Allied soldier platoon.\n",
+                      moment=None,
+                      type="normal")
+scenario_4bab = Story(story="You decide that committing ritual suicide would be the best way to go, given "
+                            "the failure of the Imperial Japanese Army and your platoon in repelling the Allied "
+                            "invaders. As the officer in charge of your platoon, it would be right for you to bear "
+                            "this shame via ritual suicide. Being all prepared for your suicide, you write a "
+                            "death poem:\n\n'Wide-eyed and eager,\nI charged to the forefront,\nAll ready to die,\n"
+                            "For Emperor and country,\nFor glory and victory.'\n\nYou then ask your surviving soldiers "
+                            "to help you in your ritual suicide, and you die as desired.\n",
+                      moment=None,
+                      type="normal")
+scenario_4bb = Story(story="You decide that the best course of action your platoon can do now, even in the "
+                           "face of defeat, is to bring about the deaths of as many other Allied soldiers as you "
+                           "all can with your deaths. Being all prepared now, you write a death poem:\n\n'Wide-eyed "
+                           "and eager,\nI charged to the forefront,\nAll ready to die,\nFor Emperor and country,\n"
+                           "For glory and victory.'\n\nWith your death poem complete, you mentally prepare "
+                           "yourself and your platoon to blow yourselves up with grenades during the next time "
+                           "you encounter an Allied soldier platoon.\n",
+                     moment=None,
+                     type="normal")
+scenario_5 = Story(story="After your surrender, you were subject to harsh interrogation about your role in the "
+                         "invasion of Guadalcanal, before being released and being asked to coordinate the Allied "
+                         "efforts in helping other Japanese soldiers be daring enough to surrender to the Allies, "
+                         "given your position as officer.\n\nYou do your duties for the Allies, feeling deep "
+                         "shame in your betrayal of the IJA. Yet, you still strive on to do so because you know "
+                         "that ultimately, your actions will help save more Japanese lives and prevent futile deaths, "
+                         "when so many of such deaths have already occurred in this battle.\n\n...\n\nAfter the war "
+                         "ended, you return to your home in Japan and although you initially find struggle in "
+                         "reconciling with your family due to your shameful act of surrendering and aiding the "
+                         "Allies, you eventually manage to and become a lifelong proponent against war, having "
+                         "witnessed the innumerable atrocities and futile deaths. You can now proudly look back "
+                         "on your life and tell yourself that the choice to surrender and live was the right one.\n",
+                   moment=None,
+                   type="normal")
 
 """
 Add the stories to the appropriate choice a or choice b branches in a bottom up manner.
@@ -372,7 +705,32 @@ scenario_3.insert_story_node(scenario_3a, True)
 scenario_3.insert_story_node(scenario_3b, False)
 scenario_3a.insert_story_node(scenario_3aa, True)
 scenario_3a.insert_story_node(scenario_3ab, False)
+scenario_3ab.insert_story_node(scenario_4, True)
 scenario_3b.insert_story_node(scenario_3ba, True)
 scenario_3b.insert_story_node(scenario_3bb, False)
 scenario_3bb.insert_story_node(scenario_3bba, True)
 scenario_3bb.insert_story_node(scenario_3bbb, False)
+scenario_3bbb.insert_story_node(scenario_4, True)
+
+scenario_4.insert_story_node(scenario_4a, True)
+scenario_4.insert_story_node(scenario_4b, False)
+scenario_4a.insert_story_node(scenario_4aa,True)
+scenario_4a.insert_story_node(scenario_4ab, False)
+scenario_4aa.insert_story_node(scenario_4aaa, True)
+scenario_4aa.insert_story_node(scenario_4aab, False)
+scenario_4aab.insert_story_node(scenario_4aaba, True)
+scenario_4aab.insert_story_node(scenario_4aabb, False)
+scenario_4aaba.insert_story_node(scenario_5, True)
+scenario_4aabb.insert_story_node(scenario_4aabba, True)
+scenario_4aabb.insert_story_node(scenario_4aabbb, False)
+scenario_4ab.insert_story_node(scenario_4aba, True)
+scenario_4ab.insert_story_node(scenario_4abb, False)
+scenario_4abb.insert_story_node(scenario_4abba, True)
+scenario_4abb.insert_story_node(scenario_4abbb, False)
+scenario_4abba.insert_story_node(scenario_5, True)
+scenario_4abbb.insert_story_node(scenario_4abbba, True)
+scenario_4abbb.insert_story_node(scenario_4abbbb, False)
+scenario_4b.insert_story_node(scenario_4ba, True)
+scenario_4b.insert_story_node(scenario_4bb, False)
+scenario_4ba.insert_story_node(scenario_4baa, True)
+scenario_4ba.insert_story_node(scenario_4bab, False)
